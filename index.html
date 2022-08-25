@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <div class="container">
+    <div class="starBorder">
+      <img src="/images/icon-star.svg" alt="Star icon">
+    </div>
+    <div class="text">
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+    </div>
+    <form class="ratings">
+      <input type="radio" name="rating" value="1" id="rating1">
+      <label for="rating1">1</label>
+      <input type="radio" name="rating" value="2" id="rating2">
+      <label for="rating2">2</label>
+      <input type="radio" name="rating" value="3" id="rating3">
+      <label for="rating3">3</label>
+      <input type="radio" name="rating" value="4" id="rating4">
+      <label for="rating4">4</label>
+      <input type="radio" name="rating" value="5" id="rating5">
+      <label for="rating5">5</label>
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+
+  <div id="thankYou" class="thankYou hide">
+    <div class="imgThankyou">
+      <img src="/images/illustration-thank-you.svg" alt="">
+    </div>
+    <div class="selectionHolder">
+      <p class="selection">Test</p>
+    </div>
+
+    <h1>Thank you!</h1>
+    <p class="msg">
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don't hesitate to get in touch!
+    </p>
+
+  </div>
+  
+  <script src="voteForm.js"></script>
+</body>
+</html>
