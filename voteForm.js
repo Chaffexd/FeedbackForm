@@ -1,4 +1,4 @@
-const form = document.querySelector(".container");
+const form = document.querySelector(".rating-container");
 const thankYouForm = document.getElementById("thankYou");
 
 form.addEventListener("submit", function(e) {
@@ -8,7 +8,7 @@ form.addEventListener("submit", function(e) {
 
     if(checkedInput !== null) {
         const selectedRating = document.querySelector(".selectionHolder"); // grabs the div 
-        selectedRating.textContent = "You selected " + checkedInput.getAttribute("value") + " out of 5";
+        selectedRating.textContent = `You selected ${checkedInput.getAttribute("value")} out of 5`;
         form.classList.add("hide");
         thankYouForm.classList.remove("hide");
     }

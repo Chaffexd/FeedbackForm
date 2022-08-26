@@ -15,7 +15,7 @@ body {
     align-items: center;
 }
 
-.container {
+.rating-container {
     width: 23.3em;
     height: 23.3em;
     background-color: hsl(213, 19%, 18%);
@@ -82,7 +82,7 @@ input:checked + label{
 }
 
 input {
-    display: none;
+    appearance: none;
 }
 
 input:checked + label{
@@ -114,7 +114,7 @@ button:hover {
     display: none !important;
 }
 
-.thankYou {
+.thankYou-container {
     width: 23.3em;
     height: 23.3em;
     background-color: hsl(213, 19%, 18%);
@@ -126,17 +126,17 @@ button:hover {
     align-items: center;
 }
 
-.thankYou img {
+.thankYou-container img {
     margin-top: 10px;
 }
 
-.thankYou h1 {
+.thankYou-container h1 {
     font-size: 2em;
     color: white;
     margin-top: -60px !important;
 }
 
-.thankYou p {
+.thankYou-container p {
     color: hsl(217, 12%, 63%);
     margin-top: -70px;
 }
